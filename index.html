@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioFrost | Nieves Naturales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="https://i.imgur.com/S2voK0J.jpeg" alt="Logo BioFrost" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#quienessomos">¿Quiénes somos?</a></li>
+          <li><a href="#productos">Nieves</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="verCarrito" class="carrito-boton">Carrito (<span id="cantidadCarrito">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Sección ¿Quiénes somos? -->
+    <section id="quienessomos" class="productos-seccion">
+      <div class="titulo-seccion">
+        <h1>¿Quiénes somos?</h1>
+        <p>En BioFrost, creemos que el placer de disfrutar un delicioso helado no debe estar limitado por condiciones médicas.
+           Por eso, desarrollamos una línea de helados especialmente pensada para personas con diabetes y para quienes atraviesan 
+           procesos como la quimioterapia. Nuestros productos están elaborados con ingredientes naturales, sin azúcares añadidos 
+           y con beneficios funcionales que ayudan a aliviar náuseas, sequedad bucal y pérdida del apetito. Somos un equipo 
+           comprometido con la salud y el bienestar, combinando ciencia, sabor y empatía para ofrecer una alternativa saludable 
+           sin sacrificar el gusto. Más que un postre, nuestros helados son una muestra de apoyo y cariño hacia quienes enfrentan 
+           desafíos de salud diariamente.</p>
+      </div>
+      <div class="grid-productos">
+        <div class="producto">
+          <img src="https://i.imgur.com/5zhSiJ5.jpeg" alt="Ingredientes Naturales">
+          <h3>Proposito</h3>
+          <p>Creemos que la ciencia y la creatividad pueden mejorar la vida de las personas. 
+            Por eso, desarrollamos un helado que no solo es delicioso, sino también pensado 
+            para quienes necesitan opciones saludables.</p>
+        </div>
+        <div class="producto">
+          <img src="https://i.imgur.com/NSWF8Di.jpeg" alt="Proceso Artesanal">
+          <h3>Trabajo en equipo</h3>
+          <p>Cada decisión, desde los ingredientes hasta el diseño web, es fruto del esfuerzo 
+            colaborativo de estudiantes comprometidos con un cambio positivo.</p>
+        </div>
+        <div class="producto">
+          <img src="https://i.imgur.com/OBQn0Qa.jpeg" alt="Compromiso con la calidad">
+          <h3>Desde el TEC para el mundo</h3>
+          <p>Este proyecto nació en nuestras aulas, pero su impacto va más allá. Queremos que 
+            BioFrost ayude a quienes buscan alternativas alimenticias seguras y deliciosas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="productos-seccion">
+      <div class="titulo-seccion">
+        <h1>Nieves BioFrost</h1>
+        <p>Disfruta nuestras Nieves artesanales</p>
+      </div>
+      <div class="grid-productos" id="gridProductos">
+        <!-- Productos cargados por JavaScript -->
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Modal del carrito -->
+  <div id="modalCarrito" class="modal">
+    <div class="modal-contenido">
+      <h3>Tu Carrito</h3>
+      <ul id="listaCarrito"></ul>
+      <p>Total: $<span id="totalCarrito">0</span></p>
+      <button id="cerrarCarrito">Cerrar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BioFrost. Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>BioFrost</h4>
+        <a href="#">Eventos Especiales</a>
+        <a href="#">Bolsa de Trabajo</a>
+      </div>
+      <div class="footer-column">
+        <h4>Invitados</h>
+        <a href="#">Atención a Clientes</a>
+      </div>
+      <div class="footer-column">
+        <h4>Legales</h4>
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 BioFrost. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
